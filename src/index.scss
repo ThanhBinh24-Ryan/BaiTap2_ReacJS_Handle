@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    background-image: url("/img/glassesImage/background.jpg");
+    background-repeat: no-repeat; /* Sửa từ 'none' thành 'no-repeat' */
+    background-size: cover;
+ 
+    /* Màu chữ mặc định */
+    height: 10%;
+   
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(55, 54, 54, 0.5); /* Màu trắng với độ trong suốt */
+    z-index: 1; /* Đảm bảo lớp phủ ở trên nội dung */
+}
+
+.content {
+    position: relative;
+    z-index: 2; /* Đảm bảo nội dung ở trên lớp phủ */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.bg-opacity-70 {
+    background-color: rgba(0, 0, 0, 0.7); /* Màu đen với độ trong suốt 70% */
+}
+button{
+    border: 1px solid black;
+}
